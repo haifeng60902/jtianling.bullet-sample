@@ -2,7 +2,7 @@
 <VisualStudioProject
 	ProjectType="Visual C++"
 	Version="9.00"
-	Name="Bullet-HelloWorld"
+	Name="Bullet-CollideDetection"
 	ProjectGUID="{02F50EBB-C43D-43B8-A4FE-3DA52E0E78D2}"
 	RootNamespace="BulletHelloWorld"
 	Keyword="Win32Proj"
@@ -41,7 +41,7 @@
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="0"
-				AdditionalIncludeDirectories="&quot;$(BULLET_HOME)/src&quot;;&quot;$(BULLET_HOME)/Glut&quot;"
+				AdditionalIncludeDirectories="&quot;$(BULLET_HOME)/src&quot;;&quot;$(BULLET_HOME)/Glut&quot;;&quot;$(BULLET_HOME)/Demos/OpenGL&quot;"
 				PreprocessorDefinitions="WIN32;_DEBUG;_CONSOLE"
 				MinimalRebuild="true"
 				BasicRuntimeChecks="3"
@@ -61,7 +61,7 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
-				AdditionalDependencies="kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib BulletDynamics.lib BulletCollision.lib LinearMath.lib"
+				AdditionalDependencies="kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib BulletDynamics.lib BulletCollision.lib LinearMath.lib $(BULLET_HOME)/Glut/glut32.lib opengl32.lib glu32.lib OpenGLSupport.lib"
 				LinkIncremental="2"
 				AdditionalLibraryDirectories="&quot;$(BULLET_LIBS)/$(ConfigurationName)&quot;"
 				GenerateDebugInformation="true"
@@ -177,7 +177,7 @@
 			UniqueIdentifier="{4FC737F1-C7A5-4376-A066-2A32D752A2FF}"
 			>
 			<File
-				RelativePath=".\Bullet-HelloWorld.cpp"
+				RelativePath=".\Bullet-CollideDetection.cpp"
 				>
 			</File>
 			<File
