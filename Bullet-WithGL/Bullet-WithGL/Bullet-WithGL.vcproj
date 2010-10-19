@@ -2,7 +2,7 @@
 <VisualStudioProject
 	ProjectType="Visual C++"
 	Version="9.00"
-	Name="Bullet-HelloWorld"
+	Name="Bullet-WithGL"
 	ProjectGUID="{02F50EBB-C43D-43B8-A4FE-3DA52E0E78D2}"
 	RootNamespace="BulletHelloWorld"
 	Keyword="Win32Proj"
